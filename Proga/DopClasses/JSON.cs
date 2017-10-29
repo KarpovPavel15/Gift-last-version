@@ -19,7 +19,7 @@ namespace Proga
                 {
                     streamWriter.WriteLine(serialized);
                 }
-
+            
             }
 
             static public List<Sweet> DeserializationSweet()
