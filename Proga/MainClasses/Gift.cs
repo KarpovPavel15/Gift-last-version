@@ -35,6 +35,7 @@ namespace Proga
         {
             return items.Where(x => (x.Calories >= min) && (x.Calories<= max)).ToList();
         }
+
         public IEnumerable<Sweet> Items
         {
             get { return this.items; }
