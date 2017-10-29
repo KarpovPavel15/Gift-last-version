@@ -10,6 +10,7 @@ namespace Proga
     {
         static void Main(string[] args)
         {
+
             List<Fruit> fruit = new List<Fruit>();
             fruit.Add(new Fruit("Orange", 180, 100, 100, 0, 0));
             fruit.Add(new Fruit("Pineapple", 20, 190, 100, 0, 0));
@@ -90,8 +91,11 @@ namespace Proga
             }
             Console.WriteLine();
             
+
             Console.WriteLine("Вес подарка: {0}", gift.GiftWeight());
             Console.ReadKey();
         }
     }
+
+
 }
