@@ -10,7 +10,7 @@ namespace Proga
     {
         static void Main(string[] args)
         {
-            List<Fruit> fruit = new List<Fruit>();
+           /* List<Fruit> fruit = new List<Fruit>();
             fruit.Add(new Fruit("Orange", 180, 100, 100, 0, 0));
             fruit.Add(new Fruit("Pineapple", 20, 190, 100, 0, 0));
             fruit.Add(new Fruit("Apple", 100, 299, 200, 80, 0));
@@ -27,13 +27,15 @@ namespace Proga
             candy.Add(new Candy("Bee", 17, 77631, 400, 200, "glazyr"));
             candy.Add(new Candy("Kuzn", 30, 71, 200, 200, "konyak"));
             candy.Add(new Candy("Gryliazh", 15, 773, 200, 200, "cream"));
-
+            */
             List<Sweet> swt1 = new List<Sweet>();
             Interface gift = new Gift();
+            /*
             swt1.AddRange(fruit);
             swt1.AddRange(wafer);
             swt1.AddRange(candy);
             JSON.SerializationSweet(swt1);
+            */
 
             List<Sweet> gft = new List<Sweet>();
             gft = JSON.DeserializationSweet();

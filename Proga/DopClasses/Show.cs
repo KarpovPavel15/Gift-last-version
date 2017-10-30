@@ -17,10 +17,10 @@ namespace Proga
         }
         public static void outputinfoGift(Interface gift)
         {
-            Console.WriteLine("Набор конфет: ");
+            Console.WriteLine("Набор сладостей: ");
             foreach (var i in gift.Items)
             {
-                Console.WriteLine("Название конфеты: {0}, Вес конфеты: {1}, Колории: {2}, Цена: {3},"
+                Console.WriteLine("Название продукта: {0}, Вес продукта: {1}, Колории: {2}, Цена: {3},"
                     , i.Name, i.Weight, i.Calories, i.Cost);
 
             }
