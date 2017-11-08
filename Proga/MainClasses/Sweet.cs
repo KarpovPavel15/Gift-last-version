@@ -17,8 +17,6 @@ namespace Proga
 
         public int Cost { get; set; }
 
-        public Sweet() { }
-
 
         public Sweet(string name, int weight, int calories, int cost)
         {
@@ -30,13 +28,8 @@ namespace Proga
 
         public override string ToString()
         {
-            string ThisPod = string.Format("  Name: {0} \tWeight: {1} \tCalories: {2} \tCost: {3}", Name, Weight, Calories, Cost);
-            return ThisPod;
-        }
-        public virtual bool contain(string str)
-        {
-            if (str == "sweet") return true;
-            return false;
+            string list = string.Format("  Name: {0} \tWeight: {1} \tCalories: {2} \tCost: {3}", Name, Weight, Calories, Cost);
+            return list;
         }
 
         public int CompareTo(object obj)
@@ -44,8 +37,6 @@ namespace Proga
             if (obj is Sweet)
                 return this.Calories.CompareTo((obj as Sweet).Calories);
             return 0;
-
-
         }
     }
 }

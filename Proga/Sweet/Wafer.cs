@@ -6,29 +6,17 @@ using System.Threading.Tasks;
 
 namespace Proga
 {
-    class Wafer:Sweet
+    class Wafer : Sweet
     {
+        public string KindOfWafer { get; set; }
         public string Taste { get; set; }
-        public int PraceofGlaze { get; set; }
 
 
-        public Wafer(string name, int weight, int calories, int cost, string taste, int praceglaze)
+        public Wafer(string name, int weight, int calories, int cost, string kindofwafer, string taste)
             : base(name, weight, calories, cost)
         {
+            KindOfWafer = kindofwafer;
             Taste = taste;
-            PraceofGlaze = praceglaze;
-        }
-        //public override string ToString()
-        //{
-        //    string myPod = string.Format("Taste : {0} \tPrace of Glaze : {1}",Taste,PraceofGlaze);
-        //    myPod += base.ToString();
-        //    return myPod;
-            
-        //}
-        public override bool contain(string str)
-        {
-            if (str == "wafer") return true;
-            return false;
         }
     }
 }

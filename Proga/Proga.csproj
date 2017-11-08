@@ -47,19 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Sweet\Candy.cs" />
-    <Compile Include="Packer\CandyPacker.cs" />
     <Compile Include="Sweet\Fruit.cs" />
     <Compile Include="MainClasses\AllSweets.cs" />
-    <Compile Include="Packer\FruitPacker.cs" />
     <Compile Include="MainClasses\Gift.cs" />
-    <Compile Include="Interface\Interface.cs" />
+    <Compile Include="Interface\IGift.cs" />
     <Compile Include="DopClasses\JSON.cs" />
-    <Compile Include="Packer\Packer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DopClasses\Show.cs" />
     <Compile Include="MainClasses\Sweet.cs" />
     <Compile Include="Sweet\Wafer.cs" />
-    <Compile Include="Packer\WaferPacker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

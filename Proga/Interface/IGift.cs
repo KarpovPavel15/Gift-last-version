@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Proga
 {
-    interface Interface
+    interface IGift
     {
         IEnumerable<Sweet> Items { get; }
         void Add(Sweet sweets);
         void Sort();
-        IEnumerable<Sweet> FindCandyByCalories(int min, int max);
+        IEnumerable<Sweet> FindSweetsInGiftByCalories(int min, int max);
         int GiftWeight();
     }
 }

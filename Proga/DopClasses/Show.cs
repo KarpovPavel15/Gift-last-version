@@ -8,19 +8,20 @@ namespace Proga
 {
     class Show
     {
-        public static void outputinfo(List<Sweet> AllSweet)
+        public static void Outputinfo(List<Sweet> sweets)
         {
-            foreach(Sweet swt in AllSweet)
+            foreach (Sweet sweet in sweets)
             {
-                Console.WriteLine(swt.ToString());
+                Console.WriteLine(sweet.ToString());
             }
+
         }
-        public static void outputinfoGift(Interface gift)
+        public static void OutputinfoGift(IGift gift)
         {
-            Console.WriteLine("Набор сладостей: ");
+            Console.WriteLine("Gift content: ");
             foreach (var i in gift.Items)
             {
-                Console.WriteLine("Название продукта: {0}, Вес продукта: {1}, Колории: {2}, Цена: {3},"
+                Console.WriteLine("Name of product : {0}, Weight of product: {1}, Calories: {2}, Cost: {3},"
                     , i.Name, i.Weight, i.Calories, i.Cost);
 
             }

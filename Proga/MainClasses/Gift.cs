@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Proga
 {
-    class Gift:Interface
+    class Gift : IGift
     {
-        private ICollection<Sweet> items;
+        public ICollection<Sweet> items;
 
         public Gift()
         {
@@ -24,21 +24,16 @@ namespace Proga
         }
         public void Sort()
         {
-            var temp = items.OrderBy(x => x.Cost).ToList();
-            items.Clear();
-            foreach (var item in temp)
-            {
-                items.Add(item);
-            }
+            items = items.OrderBy(x => x.Cost).ToList();
         }
-        public IEnumerable<Sweet> FindCandyByCalories(int min, int max)
+        public IEnumerable<Sweet> FindSweetsInGiftByCalories(int min, int max)
         {
-            return items.Where(x => (x.Calories >= min) && (x.Calories<= max)).ToList();
+            return items.Where(x => (x.Calories >= min) && (x.Calories <= max)).ToList();
         }
 
         public IEnumerable<Sweet> Items
         {
-            get { return this.items; }
+            get { return items; }
         }
 
     }
